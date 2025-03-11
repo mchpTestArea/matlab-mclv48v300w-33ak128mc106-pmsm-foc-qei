@@ -39,10 +39,12 @@
       },
       "keywords":[
       	"Motor Control",
-	"FOC",
-        "GPIO",
-	"ADC",
-	"PWM"
+	      "FOC",
+         "QEI",
+         "Optical Encoder",
+         "GPIO",
+	      "ADC",
+	      "PWM"
       ]
    }
 }
