@@ -7,7 +7,7 @@
       "version":"1.0.0",
       "displayName":"MATLAB-Simulink model for Optical Encoder Based FOC",
       "projectName":"matlab-mclv48v300w-33ak128mc106-pmsm-foc-qei",
-      "shortDescription":"MATLAB-Simulink model for Optical Encoder Based FOC using MCLV-48V-300W Development Board and dsPIC33CH512MP508 MC DIM",
+      "shortDescription":"MATLAB-Simulink model for Optical Encoder Based FOC using MCLV-48V-300W Development Board and dsPIC33AK128MC106 MC DIM",
       "simulationTool":{
          "name":"MATLAB/Simulink",
          "semverRange":">=2024"
