@@ -9,7 +9,7 @@
 ## 1. INTRODUCTION
 
 This document describes the setup requirements to drive a PMSM motor on the hardware platform 
-[EV18H47A](https://www.microchip.com/en-us/development-tool/EV18H47A) "MCLV-48V-300W Motor Control Development Board" and [EV68M17A](https://www.microchip.com/en-us/development-tool/EV68M17A) "dsPIC33AK128MC106 Motor Control Dual In-line Module(DIM)".</p>
+[EV18H47A](https://www.microchip.com/en-us/development-tool/EV18H47A) "MCLV-48V-300W Motor Control Development Board" and [EV68M17A](https://www.microchip.com/en-us/development-tool/EV68M17A) "dsPIC33AK128MC106 Motor Control Dual In-line Module (DIM)".</p>
 
 The Quadrature Encoder Interface ([QEI](https://ww1.microchip.com/downloads/aemDocuments/documents/MCU16/ProductDocuments/ReferenceManuals/dsPIC33-PIC24-FRM-Quadrature-Encoder-Interface-QEI-DS70000601D.pdf)) perpheral of the dsPIC DSC can be configured to obtain the position and speed information from the opitical encoder feedback of the motor.
 
@@ -21,7 +21,7 @@ To clone or download this MATLAB model on GitHub,
 
 - MATLAB model can be cloned or downloaded as zip file from the Github repository ([link](https://github.com/microchip-pic-avr-solutions/matlab-mclv48v300w-33ak128mc106-pmsm-foc-qei)).
 
-### 2.2 Software Tools Used for Testing the firmware
+### 2.2 Software Tools Used for Testing the MATLAB/Simulink Model
 
 - MPLAB® X IDE **v6.25** 
 - MPLAB® XC-DSC Compiler **v3.21**
@@ -83,11 +83,11 @@ This section describes the hardware setup required for the demonstration.
 
     |Development Board|	Hurst300 Motor||
     |:---:|:----------------------:|:----------------------:|
-    ||Hall Terminals(Color as per image above)|	Encoder Connector (FCI Connect #69168-108) |
+    ||QEI Terminals(Color as per image above)|	Encoder Connector (FCI Connect #69168-108) |
     |5V|	Red|	1|
-    |DGND|	Black|	8|
-    |Q A	| White	|5|
-    |Q B	|Blue|	6|
+    |DGND|	Black|	5|
+    |Q A	| White	|2|
+    |Q B	|Blue| 3|
 
     <br />
 
@@ -114,7 +114,7 @@ This section describes the hardware setup required for the demonstration.
 ## 4.	BASIC DEMONSTRATION
 <p style='text-align: justify;'> Follow the below instructions step-by-step, to set up and run the motor control demo application:</p>
 
-1. Launch MATLAB (refer the section [“2.2 Sofware Tools Used for Testing the MATLAB/Simulink Model"](#22-software-tools-used-for-testing-the-matlabsimulink-model)).</p> 
+1. Launch MATLAB (refer the section [“2.2 Software Tools Used for Testing the MATLAB/Simulink Model"](#22-software-tools-used-for-testing-the-matlabsimulink-model)).</p> 
 2. Open the folder downloaded from the repository, in which MATLAB files are saved (refer the section ["2.1 MATLAB Model Required for the Demonstration"](#21-matlab-model-required-for-the-demonstration)).
 
     <p align="left" >
@@ -162,7 +162,7 @@ This section describes the hardware setup required for the demonstration.
       <img  src="images/dem9.png"width="500"></p>
     </p>
 
-10.	If the device is successfully programmed, <b>LED1 - LD2</b> and the <b>LED2 - LD2</b> will be blinking.
+10.	If the device is successfully programmed, <b>LED1 - LD2</b> and the <b>LED2 - LD3</b> will be blinking.
 
     <p align="left">
       <img  src="images/led.png"width="500"></p>
